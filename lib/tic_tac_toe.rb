@@ -101,18 +101,18 @@ def turn(board)
   end
 end
 
-def play(board)
-  turn(board)
-  if over?(board) == false
-    play(board)
-  elsif winner?(board) == "X"
-    puts "Congratulations X"
-  elsif winner?(board) == "O"
-    puts "Congratulations O"
-  else draw?(board) == true
-    puts "Cat's Game!"
-  end
-end
+# def play(board)
+#   turn(board)
+#   if over?(board) == false
+#     play(board)
+#   elsif winner?(board) == "X"
+#     puts "Congratulations X"
+#   elsif winner?(board) == "O"
+#     puts "Congratulations O"
+#   else draw?(board) == true
+#     puts "Cat's Game!"
+#   end
+# end
 
 def play(board)
   while over?(board) == false
