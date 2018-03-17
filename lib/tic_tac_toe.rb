@@ -117,7 +117,7 @@ end
 
 def play(board)
   binding.pry
-  while over?(board) == false
+  while over?(board) == nil
     turn(board)
   end
   if won?(board) && winner(board) == "X"
