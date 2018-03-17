@@ -40,7 +40,7 @@ def winner(board)
     nil
   elsif board[array[0]] == "X"
     "X"
-  elsel
+  else
     "O"
   end
 end
