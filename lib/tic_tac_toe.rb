@@ -34,13 +34,13 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   array = won?(board)
   if array == nil
     nil
   elsif board[array[0]] == "X"
     "X"
-  else
+  elsel
     "O"
   end
 end
@@ -118,9 +118,9 @@ def play(board)
   while over?(board) == false
     turn(board)
   end
-  if won?(board) && winner?(board) == "X"
+  if won?(board) && winner(board) == "X"
     puts "Congratulations X"
-  elsif won?(board) && winner?(board == "O")
+  elsif won?(board) && winner(board == "O")
     puts "Congratulations O"
   else
     puts "Cat's Game!"
