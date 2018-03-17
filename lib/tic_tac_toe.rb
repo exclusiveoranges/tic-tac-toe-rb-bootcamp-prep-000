@@ -30,9 +30,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board) || draw?(board) || full?(board)
-    return true
-  end
+  won?(board) || draw?(board) || full?(board)
 end
 
 def winner(board)
@@ -116,8 +114,8 @@ end
 # end
 
 def play(board)
-  
-  while over?(board) == nil
+
+  while !over?(board)
     turn(board)
   end
   if won?(board) && winner(board) == "X"
