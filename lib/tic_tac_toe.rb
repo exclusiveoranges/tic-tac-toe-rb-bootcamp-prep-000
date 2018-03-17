@@ -34,7 +34,7 @@ def over?(board)
   end
 end
 
-def winner(board)
+def winner?(board)
   array = won?(board)
   if array == nil
     nil
