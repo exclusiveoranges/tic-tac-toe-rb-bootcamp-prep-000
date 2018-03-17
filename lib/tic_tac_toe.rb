@@ -116,7 +116,7 @@ end
 # end
 
 def play(board)
-  binding.pry
+  
   while over?(board) == nil
     turn(board)
   end
