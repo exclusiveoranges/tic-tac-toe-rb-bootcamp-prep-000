@@ -11,9 +11,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board == [" ", " ", " ", " ", " ", " ", "O", "O", "O"]
-    binding.pry
-  end
     WIN_COMBINATIONS.detect do |array|
        board[array[0]] == board[array[1]] && board[array[2]] == "X" && board[array[0]] == board[array[2]] ||
        board[array[0]] == board[array[1]] && board[array[2]] == "O" && board[array[0]] == board[array[2]]
